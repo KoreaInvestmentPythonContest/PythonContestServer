@@ -1,0 +1,225 @@
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+              integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+      
+        <!-- 요기에 구글 머티리얼 아이콘 -->
+        <link
+          href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+          rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <title> #한투스타그램 </title>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script text="javascript/text">
+          $(document).ready(function(){
+      
+              $('.feed-information').each(function(){
+                  var content = $(this).children('.feed-content');
+                  var content_txt = content.text();
+                  var content_txt_short = content_txt.substring(0,100)+"...";
+                  var btn_more = $('<a href="javascript:void(0)" class="more">더보기</a>');
+                  $(this).append(btn_more);
+                  if(content_txt.length >= 100){
+                      content.html(content_txt_short)
+                      
+                  }else{
+                      btn_more.hide()
+                  }
+                  
+                  btn_more.click(toggle_content);
+      
+                  function toggle_content(){
+                      if($(this).hasClass('short')){
+                          // 접기 상태
+                          $(this).html('더보기');
+                          content.html(content_txt_short)
+                          $(this).removeClass('short');
+                      }else{
+                          // 더보기 상태
+                          $(this).html('접기');
+                          content.html(content_txt);
+                          $(this).addClass('short');
+      
+                      }
+                  }
+              });
+          });
+        </script>      
+        <style>
+          .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 600,
+            'GRAD' 0,
+            'opsz' 60
+          }
+          .profile_box {
+            display: grid;
+            grid-template-columns: repeat(100, 1fr);
+            white-space:nowrap;
+            overflow:auto;
+            grid-gap: 1px;
+          }
+          .stats__img-holder {
+            display: block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 1px solid #d8d8d8;
+            background: center/125% no-repeat;
+          }
+          .main_body {
+            display: flex;
+            width : 100%;
+            justify-content: center;
+            padding-top: 10px;
+            background-color: #FAFAFA;
+          }
+          .feed_box {
+            background-color: white;
+            width : inherit;
+            margin-bottom: 10px;
+            min-height: auto;
+            padding-bottom: 10px;
+          }
+          .feed_img{
+            width: 100%;
+            object-fit: contain;
+          }
+          .feed_content{
+            padding: 0px 10px;
+          }
+          .feed_like{
+            padding: 0px 10px;
+          }
+          .feed_reply{
+            padding: 0px 10px;
+            display: flex;
+            flex-direction: column;
+          }
+          .feed_txt{
+            font-size: 14px;
+          }
+          .feed_body {
+            padding: 5px 5px;
+            padding-top: 10px;
+            width : inherit;
+            display: flex;
+            flex-direction: column;
+          }
+          .feed-information{margin:10px;}
+          .feed-content{
+            width:inherit;
+            font: 400 1rem/1.5rem 'NotoSansKR';
+          }
+          input[type="text"]{
+          width:80%;
+          height:100%;
+          border:none;
+          font-size:1em;
+          padding-left: 5px;
+          font-style: oblique;
+          display:inline;
+          outline:none;
+          box-sizing: border-box;
+          color:black;
+          }
+          input[type=button]{
+          width: 20%;
+          height:100%;
+          background-color: lightgray;
+          border:none;
+          background-color: white;
+          font-size:1em;
+          color:#042AaC;
+          font-weight: 700;
+          outline:none;
+          display:inline;
+          margin-left: -10px;
+          box-sizing: border-box;
+          }
+          input[type=button]:hover{
+            background-color: lightgray;
+          }
+          
+      </style>
+      </head>
+<body>
+      <!--[상단] 네비게이션바 -->
+      {%include "navbarTop.html" %}
+      <!--[중간] 본격 바디 -->
+      <div class="main_body">
+        <div class="feed_body">
+        <!--요기 박스가 for문으로 들어갈 자리 border feed_box가 반복되어야 함 -->
+        {% for feed in feedLst %}
+        <div class="border feed_box">
+          <div class="feed_name">
+            <div class="profile_box">
+              {% for pdno in feed.extr_stck_cd_list %}
+                <div class="stats__img-holder" style="background-image: url(static/img/{{pdno}}.png)" alt="pdno" onclick="location.href='/pdno/{{pdno}} '")></div>
+              {% endfor %}
+            </div>
+            <div class="feed-information">
+              <span class="feed_name_txt"> {{ feed.title }}</span>
+            </div>
+          </div>
+          {% if feed.img_url_list %}
+          <img class="feed_img" src="{{ feed.img_url_list }}" alt={{feed.img_url_list}}>
+          {% else %}
+          <img class="feed_img" src="static/alt_new_img.png" alt="static/alt_new_img.png">
+          {% endif %}
+          <div class="feed-information">
+            <div class="feed-content">  {{ feed.text }} </div>
+          </div>
+          <div class="feed_icon">
+            <div>
+              <span class="material-icons-outlined">favorite_border</span>
+              <span class="material-icons-outlined">mode_comment</span>
+              <span class="material-icons-outlined">send</span>
+              <span class="material-icons-outlined" style="float: right;">turned_in_not</span>
+            </div>
+          </div>
+          <div class="feed_like">
+            <p class="feed_txt"> <b>좋아요 10개(하트 좋아요 관심 갯수 추가)</b></p>
+          </div>
+          <div class="feed_content">
+            <p class="feed_txt"> <b> {{ feed.Sector }} </b> {{ feed.Industry }}</p>
+          </div>
+          <div class="feed_reply">
+            {% for comment in comments %}
+              <span class="feed_txt"> <b> {{ comment.user }} </b>  {{ comment.content }} </span>
+              {% if user == comment.user %}
+                <form action="{% url 'articles:comments_delete' article.pk comment.pk %}" method="POST" class="d-inline">
+                {% csrf_token %}
+                <input type="submit" value="DELETE">
+                </form>
+              {% endif %}
+            {% endfor %}
+            <div class="reply_comment">
+              {% if request.user.is_authenticated %}
+                <form action="{% url comments_create' article.pk %}" method="POST">
+                     {% csrf_token %}
+                     <input class="comment_text" type="text" placeholder="댓글 달기...">
+                     <input type="button" class="comment_submit" id ="comment_submit" value="게시">
+                </form>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+        </div>
+      </div>
+      <!--[하단] 네비게이션바-->
+      {%include "navbarBot.html" %}
+</body>
+
+</html>
+
+<!--create-->
+
+

@@ -1,0 +1,91 @@
+[2022-10-05T12:14:52.112Z] 로그 수준: Info
+[2022-10-05T12:14:52.127Z] [info] git에서 찾은 git 유효성을 검사하는 중
+[2022-10-05T12:14:52.207Z] [info] git에서 git 2.37.1을(를) 사용하는 중
+[2022-10-05T12:14:52.395Z] > git rev-parse --show-toplevel [141ms]
+[2022-10-05T12:14:52.395Z] fatal: not a git repository (or any of the parent directories): .git
+[2022-10-05T12:14:52.454Z] > git rev-parse --show-toplevel [30ms]
+[2022-10-05T12:14:52.454Z] fatal: not a git repository (or any of the parent directories): .git
+[2022-10-05T12:14:52.498Z] > git rev-parse --show-toplevel [23ms]
+[2022-10-05T12:14:52.498Z] fatal: not a git repository (or any of the parent directories): .git
+[2022-10-05T12:14:52.555Z] > git rev-parse --show-toplevel [28ms]
+[2022-10-05T12:14:52.556Z] fatal: not a git repository (or any of the parent directories): .git
+[2022-10-05T12:14:52.577Z] > git rev-parse --show-toplevel [7ms]
+[2022-10-05T12:14:52.577Z] fatal: not a git repository (or any of the parent directories): .git
+[2022-10-05T12:14:52.597Z] > git rev-parse --show-toplevel [7ms]
+[2022-10-05T12:14:52.597Z] fatal: not a git repository (or any of the parent directories): .git
+[2022-10-05T12:14:52.612Z] > git rev-parse --show-toplevel [7ms]
+[2022-10-05T12:14:52.612Z] fatal: not a git repository (or any of the parent directories): .git
+[2022-10-05T12:14:52.632Z] > git rev-parse --show-toplevel [10ms]
+[2022-10-05T12:14:52.756Z] > git rev-parse --git-dir --git-common-dir [115ms]
+[2022-10-05T12:14:52.780Z] [info] Open repository: /home/ec2-user/PythonContest
+[2022-10-05T12:14:52.850Z] > git status -z -uall [39ms]
+[2022-10-05T12:14:52.859Z] > git rev-parse --show-toplevel [19ms]
+[2022-10-05T12:14:52.859Z] fatal: not a git repository (or any of the parent directories): .git
+[2022-10-05T12:14:52.869Z] > git symbolic-ref --short HEAD [11ms]
+[2022-10-05T12:14:52.898Z] > git rev-parse --show-toplevel [32ms]
+[2022-10-05T12:14:52.898Z] fatal: not a git repository (or any of the parent directories): .git
+[2022-10-05T12:14:52.907Z] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [26ms]
+[2022-10-05T12:14:52.921Z] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [10ms]
+[2022-10-05T12:14:52.922Z] > git rev-parse --show-toplevel [16ms]
+[2022-10-05T12:14:52.922Z] fatal: not a git repository (or any of the parent directories): .git
+[2022-10-05T12:14:52.931Z] > git remote --verbose [12ms]
+[2022-10-05T12:14:52.961Z] > git rev-parse --show-toplevel [32ms]
+[2022-10-05T12:14:52.961Z] fatal: not a git repository (or any of the parent directories): .git
+[2022-10-05T12:14:52.966Z] > git config --get commit.template [12ms]
+[2022-10-05T12:14:52.983Z] > git rev-parse --show-toplevel [18ms]
+[2022-10-05T12:14:52.983Z] fatal: not a git repository (or any of the parent directories): .git
+[2022-10-05T12:14:53.000Z] > git status -z -uall [18ms]
+[2022-10-05T12:14:53.009Z] > git rev-parse --show-toplevel [19ms]
+[2022-10-05T12:14:53.009Z] fatal: not a git repository (or any of the parent directories): .git
+[2022-10-05T12:14:53.015Z] > git symbolic-ref --short HEAD [5ms]
+[2022-10-05T12:14:53.024Z] > git rev-parse --show-toplevel [10ms]
+[2022-10-05T12:14:53.024Z] fatal: not a git repository (or any of the parent directories): .git
+[2022-10-05T12:14:53.028Z] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [5ms]
+[2022-10-05T12:14:53.045Z] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [7ms]
+[2022-10-05T12:14:53.050Z] > git remote --verbose [8ms]
+[2022-10-05T12:14:53.069Z] > git config --get commit.template [7ms]
+[2022-10-05T12:14:53.404Z] > git check-ignore -v -z --stdin [2ms]
+[2022-10-05T12:14:53.931Z] > git rev-parse --show-toplevel [12ms]
+[2022-10-05T12:14:53.931Z] fatal: not a git repository (or any of the parent directories): .git
+[2022-10-05T12:14:53.969Z] > git rev-parse --show-toplevel [10ms]
+[2022-10-05T12:14:53.969Z] fatal: not a git repository (or any of the parent directories): .git
+[2022-10-05T12:14:53.986Z] > git rev-parse --show-toplevel [14ms]
+[2022-10-05T12:14:53.986Z] fatal: not a git repository (or any of the parent directories): .git
+[2022-10-05T12:14:53.993Z] > git rev-parse --show-toplevel [1ms]
+[2022-10-05T12:14:53.993Z] fatal: not a git repository (or any of the parent directories): .git
+[2022-10-05T12:14:54.828Z] > git rev-parse --show-toplevel [4ms]
+[2022-10-05T12:14:54.828Z] fatal: not a git repository (or any of the parent directories): .git
+[2022-10-05T12:14:59.007Z] > git rev-parse --show-toplevel [2ms]
+[2022-10-05T12:14:59.007Z] fatal: not a git repository (or any of the parent directories): .git
+[2022-10-05T12:17:40.187Z] > git rev-parse --show-toplevel [3ms]
+[2022-10-05T12:17:40.187Z] fatal: not a git repository (or any of the parent directories): .git
+[2022-10-05T12:21:47.059Z] > git rev-parse --show-toplevel [2ms]
+[2022-10-05T12:21:47.059Z] fatal: not a git repository (or any of the parent directories): .git
+[2022-10-05T12:28:59.713Z] > git rev-parse --show-toplevel [3ms]
+[2022-10-05T12:28:59.713Z] fatal: not a git repository (or any of the parent directories): .git
+[2022-10-05T12:29:00.454Z] > git rev-parse --show-toplevel [2ms]
+[2022-10-05T12:29:00.454Z] fatal: not a git repository (or any of the parent directories): .git
+[2022-10-05T12:29:02.139Z] > git rev-parse --show-toplevel [2ms]
+[2022-10-05T12:29:02.139Z] fatal: not a git repository (or any of the parent directories): .git
+[2022-10-05T12:38:40.394Z] > git rev-parse --show-toplevel [1ms]
+[2022-10-05T12:38:40.399Z] > git rev-parse --git-dir --git-common-dir [2ms]
+[2022-10-05T12:38:40.402Z] [info] Open repository: /home/ec2-user
+[2022-10-05T12:38:40.535Z] > git status -z -uall [128ms]
+[2022-10-05T12:38:41.107Z] > git show --textconv :feedApp/views.py [5ms]
+[2022-10-05T12:38:41.110Z] > git ls-files --stage -- /home/ec2-user/feedApp/views.py [3ms]
+[2022-10-05T12:38:41.129Z] > git check-ignore -v -z --stdin [5ms]
+[2022-10-05T12:38:41.131Z] > git check-ignore -v -z --stdin [3ms]
+[2022-10-05T12:38:59.088Z] > git ls-files --stage -- /home/ec2-user/feedApp/views.py [2ms]
+[2022-10-05T12:38:59.396Z] > git show --textconv :feedApp/views.py [2ms]
+[2022-10-05T12:40:01.046Z] > git ls-files --stage -- /home/ec2-user/feedApp/views.py [2ms]
+[2022-10-05T12:40:01.251Z] > git show --textconv :feedApp/views.py [2ms]
+[2022-10-05T12:44:35.259Z] > git ls-files --stage -- /home/ec2-user/feedApp/views.py [2ms]
+[2022-10-05T12:44:35.461Z] > git show --textconv :feedApp/views.py [2ms]
+[2022-10-05T12:44:42.628Z] > git ls-files --stage -- /home/ec2-user/feedApp/views.py [2ms]
+[2022-10-05T12:44:42.831Z] > git show --textconv :feedApp/views.py [2ms]
+[2022-10-05T12:50:32.318Z] > git ls-files --stage -- /home/ec2-user/feedApp/views.py [3ms]
+[2022-10-05T12:50:32.519Z] > git show --textconv :feedApp/views.py [2ms]
+[2022-10-05T12:52:58.936Z] > git ls-files --stage -- /home/ec2-user/feedApp/views.py [2ms]
+[2022-10-05T12:52:59.140Z] > git show --textconv :feedApp/views.py [2ms]
+[2022-10-05T12:53:58.613Z] > git check-ignore -v -z --stdin [2ms]
+[2022-10-05T12:54:19.599Z] > git check-ignore -v -z --stdin [2ms]
