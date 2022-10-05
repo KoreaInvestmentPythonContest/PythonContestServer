@@ -89,3 +89,6 @@
 [2022-10-05T12:52:59.140Z] > git show --textconv :feedApp/views.py [2ms]
 [2022-10-05T12:53:58.613Z] > git check-ignore -v -z --stdin [2ms]
 [2022-10-05T12:54:19.599Z] > git check-ignore -v -z --stdin [2ms]
+[2022-10-05T13:06:33.597Z] > git ls-files --stage -- /home/ec2-user/feedApp/views.py [7ms]
+[2022-10-05T13:06:33.602Z] > git cat-file -s dbf0c7cb030d17581d800eba1f4f3331ac6f515d [2ms]
+[2022-10-05T13:06:33.811Z] > git show --textconv :feedApp/views.py [6ms]

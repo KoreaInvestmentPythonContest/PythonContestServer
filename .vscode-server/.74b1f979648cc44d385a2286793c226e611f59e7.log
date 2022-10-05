@@ -72,3 +72,7 @@ Extension host agent listening on 36683
     'fi\n' +
     'exit 0'
 ]
+[13:06:36] [127.0.0.1][aac1f0a4][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[13:06:36] [127.0.0.1][9228f437][ExtensionHostConnection] <9137> Extension Host Process exited with code: 0, signal: null.
+Last EH closed, waiting before shutting down
+[13:06:36] Last EH closed, waiting before shutting down

@@ -1,62 +1,5 @@
 ls
 vi settings.py 
-mi0
-cd ..
-ls
-mi0
-python manage.py migrate
-python manage.py makemigrations
-ls
-ㅣ
-ls
-ㅣ
-ls
-python manage.py inspectdb
-av0
-ㅣ
-python manage.py inspectdb
-ls
-mi
-mi0
-mi
-mi0
-rs0
-mysql -u root -p rootroot
-mysql -u root
-mysql root@localhost
-mysql huest@localhost
-mysql -u root -p
-cd feedApp/
-ls
-cd ..
-ls
-cd main
-ls
-vi urls.py 
-vi views.py 
-ls
-cd ..
-ls
-cd feedApp/
-ls
-cd migrations/
-ls
-cat 0001_initial.py 
-mysql -uroot -p
-ㅣ
-ls
-cd feedApp/
-ls
-vi __init__.py 
-vi models.py 
-vi views.py 
-ls
-cd ..
-ls
-cd mi
-cd main/
-ls
-vi settings.py 
 ls
 cd ..
 ls
@@ -998,3 +941,60 @@ pip install django-social-share
 rs0
 cat .bashrc
 nohup python manage.py runserver ec2-3-89-115-172.compute-1.amazonaws.com:8000
+ls -als
+pwd
+sudo git init
+git add  README.md 
+echo "# PythonContestServer" >> README.md
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/KoreaInvestmentPythonContest/PythonContestServer.git
+git push -u origin main
+git remote origin
+git remote --list
+git remote 
+git remote origin1
+git branch -a
+git remote -v
+git push -u origin main
+ls -als 
+vi .gitignore
+git add .
+git .gitignore
+vi .gitignore
+git add .
+git status
+git
+ls -als
+sudo git push origin main
+git status
+git remote add origin https://github.com/KoreaInvestmentPythonContest/PythonContestServer.git
+git branch -M main
+git push -u origin maingit remote add origin https://github.com/KoreaInvestmentPythonContest/PythonContestServer.git
+git remote add origin https://github.com/KoreaInvestmentPythonContest/PythonContestServer.git
+git remote add origin https://github.com/KoreaInvestmentPythonContest/PythonContestServer
+git remote add origin1 https://github.com/KoreaInvestmentPythonContest/PythonContestServer.git
+ㅣㄴ
+ls
+git .init
+git init
+not a git repository (or any of the parent directories): .git
+git remote add origin1 https://github.com/KoreaInvestmentPythonContest/PythonContestServer.git
+git push -u origin
+git push
+git branch -M main
+git push -u origin main
+git push -u origin1 main
+git push origin master
+git push origin1 master
+ls
+git push origin1 master -force
+git push origin1 master --force
+git push -f origin
+git push -f origin master
+git push -f origin1 master
+git push -f origin1 mmain
+git push -f origin1 main
+git pull origin1 main
+git pull origin1 master
